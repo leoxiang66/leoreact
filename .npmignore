@@ -1,0 +1,52 @@
+# Node modules
+node_modules/
+
+# Build directory
+dist/
+
+# Source maps
+*.map
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor directories and files
+.idea/
+*.swp
+*.swo
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Project configs
+*.iml
+*.eml
+*.eslintrc
+*.tslint
+*.prettierrc
+*.editorconfig
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tests
+__tests__/
+__mocks__/
+
+# Documentation
+/docs
+/*.md
+!README.md
+
+# Examples
+/examples/
+
+# Scripts
+/scripts/
+
+# CI/CD
+/.github/
+/.gitlab-ci.yml
+/.travis.yml
