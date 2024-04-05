@@ -30,7 +30,6 @@ const Floating: React.FC<FloatingProps> = ({ top, bottom, left, right, children 
         bottom: bottom,
         left: left,
         right: right,
-        borderRadius: '50%', 
         display: 'flex', 
         alignItems: 'center', 
         justifyContent: 'center',

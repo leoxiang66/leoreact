@@ -7,23 +7,24 @@ interface ContainerProps {
   backgroundColor?: string; // CSS 背景颜色值，例如 "#fff" 或 "red"
   width?: string; // 容器的宽度，例如 "100%" 或 "200px"
   height?: string; // 容器的高度，例如 "100vh" 或 "300px"
+  borderRadius?: string; // 容器的圆角大小，例如 "10px"
   style?: CSSProperties; // 允许传递其他任何 CSS 属性
 }
 
-
 /**
- * Description placeholder
- * @date 2024/4/4 - 23:12:43
- *
- * @param {{ children: any; padding: any; margin: any; backgroundColor: any; width: any; height: any; style: any; }} param0
- * @param {*} param0.children
- * @param {*} param0.padding
- * @param {*} param0.margin
- * @param {*} param0.backgroundColor
- * @param {*} param0.width
- * @param {*} param0.height
- * @param {*} param0.style
- * @returns {Element}
+ * 一个支持自定义样式，包括圆角大小的容器组件。
+ * 
+ * @param {ContainerProps} {
+ *   children,
+ *   padding,
+ *   margin,
+ *   backgroundColor,
+ *   width,
+ *   height,
+ *   borderRadius,
+ *   style
+ * }
+ * @returns {JSX.Element}
  */
 const Container: React.FC<ContainerProps> = ({
   children,
@@ -32,15 +33,17 @@ const Container: React.FC<ContainerProps> = ({
   backgroundColor,
   width,
   height,
+  borderRadius, // 新增 borderRadius 属性
   style
 }) => {
-  // 组合用户定义的样式与组件内置样式
+  // 组合用户定义的样式与组件内置样式，新增 borderRadius
   const combinedStyles: CSSProperties = {
     padding,
     margin,
     backgroundColor,
     width,
     height,
+    borderRadius, // 应用 borderRadius
     ...style, // 将用户定义的其他样式属性与内置样式合并
   };
 
