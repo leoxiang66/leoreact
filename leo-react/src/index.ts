@@ -6,6 +6,7 @@ import Placeholder from "./Placeholder";
 import Responsive from "./Responsive";
 import Row from "./Row";
 import Sizedbox from "./Sizedbox";
+import VCenter from "./VCenter";
 
 
-export {Column,Row,Sizedbox, Container,Floating,Placeholder,CustomDialog, Responsive}
+export {Column,Row,Sizedbox, Container,Floating,Placeholder,CustomDialog, Responsive, VCenter}
