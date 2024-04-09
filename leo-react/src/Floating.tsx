@@ -33,7 +33,6 @@ const Floating: React.FC<FloatingProps> = ({ top, bottom, left, right, children 
         display: 'flex', 
         alignItems: 'center', 
         justifyContent: 'center',
-        cursor: 'pointer',
       }}
     >
       {children}

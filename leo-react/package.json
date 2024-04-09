@@ -1,11 +1,11 @@
 {
   "name": "leo-react",
-  "version": "0.20.0",
+  "version": "0.24.0",
   "description": "A custom React component library",
   "main": "src/index.ts",
   "module": "src/index.ts",
   "scripts": {
-    "build": "babel src --out-dir dist --copy-files",
+    "build": "yarn babel src --out-dir dist --extensions '.ts,.tsx'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -22,6 +22,7 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.24.1",
     "@types/react": "^18.2.74",
     "typescript": "^5.4.3"
   }
