@@ -1,3 +1,4 @@
+import Clickable from "./Clickable";
 import Column from "./Column";
 import Container from "./Container";
 import CustomDialog from "./CustomDialog";
@@ -9,4 +10,4 @@ import Sizedbox from "./Sizedbox";
 import VCenter from "./VCenter";
 
 
-export {Column,Row,Sizedbox, Container,Floating,Placeholder,CustomDialog, Responsive, VCenter}
+export {Column,Row,Sizedbox, Container,Floating,Placeholder,CustomDialog, Responsive, VCenter, Clickable}
