@@ -8,6 +8,7 @@ import Responsive from "./Responsive";
 import Row from "./Row";
 import Sizedbox from "./Sizedbox";
 import VCenter from "./VCenter";
+import {hspace20, vspace20} from "./constants"
 
 
-export {Column,Row,Sizedbox, Container,Floating,Placeholder,CustomDialog, Responsive, VCenter, Clickable}
+export {Column,Row,Sizedbox, Container,Floating,Placeholder,CustomDialog, Responsive, VCenter, Clickable, hspace20, vspace20}
