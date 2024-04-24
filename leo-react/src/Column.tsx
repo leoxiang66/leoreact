@@ -2,8 +2,18 @@ import React, { ReactNode } from "react";
 
 interface ColumnProps {
   children: ReactNode;
-  crossAxisAlignment?: "flex-start" | "flex-end" | "center" | "baseline" | "stretch";
-  mainAxisAlignment?: "flex-start" | "flex-end" | "center" | "space-between" | "space-around";
+  crossAxisAlignment?:
+    | "flex-start"
+    | "flex-end"
+    | "center"
+    | "baseline"
+    | "stretch";
+  mainAxisAlignment?:
+    | "flex-start"
+    | "flex-end"
+    | "center"
+    | "space-between"
+    | "space-around";
 }
 
 /**
@@ -16,10 +26,20 @@ interface ColumnProps {
  * @param {string} [props.mainAxisAlignment="flex-start"]
  * @returns {React.ReactElement}
  */
-const Column: React.FC<ColumnProps> = ({ children, crossAxisAlignment = "flex-start", mainAxisAlignment = "flex-start" }) => {
+const Column: React.FC<ColumnProps> = ({
+  children,
+  crossAxisAlignment = "flex-start",
+  mainAxisAlignment = "flex-start",
+}) => {
   return (
     <div
-      style={{ display: "flex", flexDirection: "column", alignItems: `${crossAxisAlignment}`, justifyContent: `${mainAxisAlignment}` }}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: `${crossAxisAlignment}`,
+        justifyContent: `${mainAxisAlignment}`,
+        height:"100%"
+      }}
     >
       {children}
     </div>

@@ -1,22 +1,26 @@
-import React from 'react';
+import React, { ReactNode } from "react";
 
 interface SizedBoxProps {
-  width?: number;
-  height?: number;
+  children: ReactNode;
+  width?: string;
+  height?: string;
 }
-
 
 /**
  * Description placeholder
- * @date 2024/4/4 - 22:50:38
  *
- * @param {{ width?: number; height?: number; }} param0
- * @param {number} [param0.width=20]
- * @param {number} [param0.height=20]
- * @returns {Element}
+ * @param {{ children: any; width: any; height: any; }} param0
+ * @param {*} param0.children
+ * @param {*} param0.width
+ * @param {*} param0.height
+ * @returns {*}
  */
-const SizedBox: React.FC<SizedBoxProps> = ({ width = 20, height = 20 }) => {
-  return <div style={{ width: `${width}px`, height: `${height}px` }}></div>;
+const SizedBox: React.FC<SizedBoxProps> = ({ children, width, height }) => {
+  const style: React.CSSProperties = {};
+  if (width) style.width = width;
+  if (height) style.height = height;
+
+  return <div style={style}>{children}</div>;
 };
 
 export default SizedBox;

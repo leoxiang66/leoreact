@@ -27,10 +27,20 @@ interface RowProps {
  * @param {string} [props.crossAxisAlignment="flex-start"]
  * @returns {React.ReactElement}
  */
-const Row: React.FC<RowProps> = ({ children, mainAxisAlignment = "flex-start", crossAxisAlignment = "flex-start" }) => {
+const Row: React.FC<RowProps> = ({
+  children,
+  mainAxisAlignment = "flex-start",
+  crossAxisAlignment = "flex-start",
+}) => {
   return (
     <div
-      style={{ display: "flex", flexDirection: "row", justifyContent: `${mainAxisAlignment}`, alignItems: `${crossAxisAlignment}` }}
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: `${mainAxisAlignment}`,
+        alignItems: `${crossAxisAlignment}`,
+        width: "100%",
+      }}
     >
       {children}
     </div>
