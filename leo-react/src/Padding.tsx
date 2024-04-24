@@ -11,12 +11,20 @@ interface PaddingProps {
   right?: number; // 单独设置右边距
 }
 
+
 /**
- * Padding component to apply consistent spacing around its child element.
- * @date 2024/04/24
+ * Description placeholder
  *
- * @param {{ children: React.ReactNode; all?: number; vertical?: number; horizontal?: number; top?: number; bottom?: number; left?: number; right?: number; }} props
- * @returns {React.ReactElement}
+ * @param {{ children: any; all: any; vertical: any; horizontal: any; top: any; bottom: any; left: any; right: any; }} param0
+ * @param {*} param0.children
+ * @param {*} param0.all
+ * @param {*} param0.vertical
+ * @param {*} param0.horizontal
+ * @param {*} param0.top
+ * @param {*} param0.bottom
+ * @param {*} param0.left
+ * @param {*} param0.right
+ * @returns {*}
  */
 const Padding: React.FC<PaddingProps> = ({
   children,
