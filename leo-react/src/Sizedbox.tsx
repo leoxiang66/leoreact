@@ -19,6 +19,7 @@ const SizedBox: React.FC<SizedBoxProps> = ({ children, width, height }) => {
   const style: React.CSSProperties = {};
   if (width) style.width = width;
   if (height) style.height = height;
+  style.display = "flex";
 
   return <div style={style}>{children}</div>;
 };
