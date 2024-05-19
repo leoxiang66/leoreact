@@ -40,6 +40,7 @@ const Row: React.FC<RowProps> = ({
         justifyContent: `${mainAxisAlignment}`,
         alignItems: `${crossAxisAlignment}`,
         width: "100%",
+        height: "100%",
       }}
     >
       {children}

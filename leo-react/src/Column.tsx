@@ -38,7 +38,8 @@ const Column: React.FC<ColumnProps> = ({
         flexDirection: "column",
         alignItems: `${crossAxisAlignment}`,
         justifyContent: `${mainAxisAlignment}`,
-        height:"100%"
+        height: "100%",
+        width: "100%"
       }}
     >
       {children}
