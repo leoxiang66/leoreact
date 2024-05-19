@@ -10,6 +10,7 @@ import Padding from "./Padding";
 import Placeholder from "./Placeholder";
 import Responsive from "./Responsive";
 import Row from "./Row";
+import SingleScrollable from "./SingleScrollable";
 import Sizedbox from "./Sizedbox";
 import { hspace20, vspace20 } from "./constants";
 
@@ -29,4 +30,5 @@ export {
   Expanded,
   Padding,
   FullScreen,
+  SingleScrollable
 };
