@@ -8,18 +8,12 @@ interface FloatingProps {
   children?: ReactNode;
 }
 
-
 /**
- * Description placeholder
- * @date 2024/4/5 - 09:31:33
+ * Floating component that allows positioning of children elements using top, bottom, left, and right props.
+ * It also allows setting optional width and height, with default values of 100%.
  *
- * @param {{ top: any; bottom: any; left: any; right: any; children: any; }} param0
- * @param {*} param0.top
- * @param {*} param0.bottom
- * @param {*} param0.left
- * @param {*} param0.right
- * @param {*} param0.children
- * @returns {*}
+ * @param {FloatingProps} props
+ * @returns {JSX.Element}
  */
 const Floating: React.FC<FloatingProps> = ({ top, bottom, left, right, children }) => {
   return (
@@ -30,9 +24,6 @@ const Floating: React.FC<FloatingProps> = ({ top, bottom, left, right, children 
         bottom: bottom,
         left: left,
         right: right,
-        display: 'flex', 
-        alignItems: 'center', 
-        justifyContent: 'center',
       }}
     >
       {children}
